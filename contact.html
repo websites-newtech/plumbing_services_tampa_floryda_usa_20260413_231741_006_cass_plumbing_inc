@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Book Appointment | Cass Plumbing Tampa Bay</title>
+  <meta name="description" content="Contact Cass Plumbing Tampa Bay. Call (813) 694-4042, text (813) 694-4042, or fill out our form to book an appointment. 24/7 emergency plumbing service.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body x-data="{ mobileOpen: false }">
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <span class="topbar__text">Rated Tampa Bay's Best Plumber by BestPlumbers.com</span>
+      <a href="tel:8136944042" class="topbar__phone"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>(813) 694-4042</a>
+    </div>
+  </div>
+
+  <header class="navbar" role="banner">
+    <div class="container navbar__inner">
+      <a href="index.html" class="navbar__logo" aria-label="Cass Plumbing - Home"><div class="logo-mark"><svg width="36" height="36" viewBox="0 0 36 36" fill="none" aria-hidden="true"><rect width="36" height="36" rx="8" fill="#1867C8"/><path d="M10 26V14a4 4 0 0 1 8 0v2a2 2 0 0 0 4 0V10" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="26" cy="10" r="2" fill="#FF6B2B"/><circle cx="10" cy="26" r="2" fill="white"/></svg></div><div class="logo-text"><span class="logo-name">Cass Plumbing</span><span class="logo-sub">Tampa Bay</span></div></a>
+      <nav class="navbar__nav" aria-label="Main navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="reviews.html" class="nav-link">Reviews</a>
+        <a href="specials.html" class="nav-link">Specials</a>
+        <a href="contact.html" class="nav-link active" aria-current="page">Contact</a>
+      </nav>
+      <div class="navbar__cta"><a href="tel:8136944042" class="btn btn--primary btn--sm"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>Call Now</a></div>
+      <button class="navbar__hamburger" @click="mobileOpen = !mobileOpen" :aria-expanded="mobileOpen.toString()" aria-controls="mobile-menu" aria-label="Toggle navigation menu"><span class="hamburger-line" :class="{ 'open': mobileOpen }"></span><span class="hamburger-line" :class="{ 'open': mobileOpen }"></span><span class="hamburger-line" :class="{ 'open': mobileOpen }"></span></button>
+    </div>
+    <div id="mobile-menu" class="mobile-menu" x-show="mobileOpen" x-transition role="navigation" aria-label="Mobile navigation">
+      <div class="mobile-menu__inner">
+        <a href="index.html" class="mobile-nav-link">Home</a>
+        <a href="services.html" class="mobile-nav-link">Services</a>
+        <a href="about.html" class="mobile-nav-link">About</a>
+        <a href="reviews.html" class="mobile-nav-link">Reviews</a>
+        <a href="specials.html" class="mobile-nav-link">Specials</a>
+        <a href="contact.html" class="mobile-nav-link active" aria-current="page">Contact</a>
+        <a href="tel:8136944042" class="btn btn--primary btn--full mt-4">Call (813) 694-4042</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero page-hero--contact" aria-labelledby="contact-hero-heading">
+      <div class="container page-hero__inner">
+        <span class="section-eyebrow section-eyebrow--light" data-animate>Get In Touch</span>
+        <h1 id="contact-hero-heading" class="page-hero__title" data-animate>Contact &amp; Book<br>Appointment</h1>
+        <p class="page-hero__subtitle" data-animate>Available 24/7 for emergencies. Same-day service available.</p>
+      </div>
+    </section>
+
+    <section class="section contact-section" aria-label="Contact information and form">
+      <div class="container contact-grid">
+
+        <div class="contact-info" data-animate>
+          <h2 class="contact-info__title">Reach Us Directly</h2>
+
+          <div class="contact-method">
+            <div class="contact-method__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+            </div>
+            <div>
+              <h3>Main Line</h3>
+              <a href="tel:8136944042" class="contact-method__link">(813) 694-4042</a>
+              <p>Questions? Call or text any time</p>
+            </div>
+          </div>
+
+          <div class="contact-method">
+            <div class="contact-method__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+            </div>
+            <div>
+              <h3>Office</h3>
+              <a href="tel:8132659200" class="contact-method__link">(813) 265-9200</a>
+              <p>Tampa Bay office line</p>
+            </div>
+          </div>
+
+          <div class="contact-method">
+            <div class="contact-method__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+            </div>
+            <div>
+              <h3>Toll Free</h3>
+              <a href="tel:8662839964" class="contact-method__link">(866) 283-9964</a>
+              <p>Available across Florida</p>
+            </div>
+          </div>
+
+          <div class="contact-method">
+            <div class="contact-method__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div>
+              <h3>Hours</h3>
+              <p><strong>Monday–Friday:</strong> 7:00 AM – 6:00 PM</p>
+              <p><strong>Saturday:</strong> 8:00 AM – 4:00 PM</p>
+              <p><strong>Emergency:</strong> 24/7 Available</p>
+            </div>
+          </div>
+
+          <div class="contact-method">
+            <div class="contact-method__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <h3>Service Area</h3>
+              <p>Tampa Bay &amp; surrounding communities including Tampa, St. Petersburg, Brandon, Clearwater, and more.</p>
+            </div>
+          </div>
+
+          <div class="emergency-callout">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            <div>
+              <strong>Plumbing Emergency?</strong>
+              <p>Call <a href="tel:8136944042">(813) 694-4042</a> now. We're available 24/7 for urgent situations.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-wrapper" data-animate>
+          <h2 class="contact-form__title">Book an Appointment</h2>
+          <p class="contact-form__subtitle">Fill out the form and we'll get back to you promptly.</p>
+          <form
+            class="contact-form"
+            x-data="contactForm()"
+            @submit.prevent="submitForm()"
+            novalidate
+            aria-label="Appointment booking form"
+          >
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name <span aria-label="required">*</span></label>
+                <input
+                  type="text"
+                  id="firstName"
+                  name="firstName"
+                  x-model="form.firstName"
+                  autocomplete="given-name"
+                  placeholder="John"
+                  aria-required="true"
+                  :aria-invalid="errors.firstName ? 'true' : 'false'"
+                  :aria-describedby="errors.firstName ? 'firstName-error' : null"
+                  @blur="validateField('firstName')"
+                >
+                <span class="form-error" id="firstName-error" x-show="errors.firstName" x-text="errors.firstName" role="alert"></span>
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name <span aria-label="required">*</span></label>
+                <input
+                  type="text"
+                  id="lastName"
+                  name="lastName"
+                  x-model="form.lastName"
+                  autocomplete="family-name"
+                  placeholder="Smith"
+                  aria-required="true"
+                  :aria-invalid="errors.lastName ? 'true' : 'false'"
+                  :aria-describedby="errors.lastName ? 'lastName-error' : null"
+                  @blur="validateField('lastName')"
+                >
+                <span class="form-error" id="lastName-error" x-show="errors.lastName" x-text="errors.lastName" role="alert"></span>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Phone Number <span aria-label="required">*</span></label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  x-model="form.phone"
+                  autocomplete="tel"
+                  placeholder="(813) 555-0100"
+                  aria-required="true"
+                  :aria-invalid="errors.phone ? 'true' : 'false'"
+                  :aria-describedby="errors.phone ? 'phone-error' : null"
+                  @blur="validateField('phone')"
+                >
+                <span class="form-error" id="phone-error" x-show="errors.phone" x-text="errors.phone" role="alert"></span>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  x-model="form.email"
+                  autocomplete="email"
+                  placeholder="john@email.com"
+                >
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="address">Service Address <span aria-label="required">*</span></label>
+              <input
+                type="text"
+                id="address"
+                name="address"
+                x-model="form.address"
+                autocomplete="street-address"
+                placeholder="123 Main St, Tampa, FL"
+                aria-required="true"
+                :aria-invalid="errors.address ? 'true' : 'false'"
+                :aria-describedby="errors.address ? 'address-error' : null"
+                @blur="validateField('address')"
+              >
+              <span class="form-error" id="address-error" x-show="errors.address" x-text="errors.address" role="alert"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="service">Service Needed <span aria-label="required">*</span></label>
+              <select
+                id="service"
+                name="service"
+                x-model="form.service"
+                aria-required="true"
+                :aria-invalid="errors.service ? 'true' : 'false'"
+                :aria-describedby="errors.service ? 'service-error' : null"
+                @blur="validateField('service')"
+              >
+                <option value="">Select a service...</option>
+                <option value="leak-detection">Leak Detection & Repair</option>
+                <option value="water-purification">Water Purification</option>
+                <option value="drain-cleaning">Drain Cleaning</option>
+                <option value="storm-drains">Storm Drain Repair</option>
+                <option value="water-heater">Water Heater Service</option>
+                <option value="inspection">Plumbing Inspection</option>
+                <option value="repiping">Repiping</option>
+                <option value="emergency">Emergency Service</option>
+                <option value="other">Other</option>
+              </select>
+              <span class="form-error" id="service-error" x-show="errors.service" x-text="errors.service" role="alert"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Describe the Issue</label>
+              <textarea
+                id="message"
+                name="message"
+                x-model="form.message"
+                placeholder="Please describe what's happening so we can best prepare for your appointment..."
+                rows="4"
+              ></textarea>
+            </div>
+
+            <div class="form-group form-group--checkbox">
+              <label class="checkbox-label">
+                <input type="checkbox" x-model="form.emergency" name="emergency">
+                <span class="checkbox-custom" aria-hidden="true"></span>
+                This is an emergency — please contact me as soon as possible
+              </label>
+            </div>
+
+            <div x-show="submitSuccess" class="form-success" role="alert" aria-live="polite">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              <strong>Thank you!</strong> We'll contact you shortly to confirm your appointment. For urgent matters, call <a href="tel:8136944042">(813) 694-4042</a>.
+            </div>
+
+            <button
+              type="submit"
+              class="btn btn--primary btn--full btn--lg"
+              :disabled="isSubmitting"
+              :class="{ 'btn--loading': isSubmitting }"
+            >
+              <span x-show="!isSubmitting">Book Appointment</span>
+              <span x-show="isSubmitting">
+                <svg class="spin" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke-dasharray="60" stroke-dashoffset="20"/></svg>
+                Submitting...
+              </span>
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a href="index.html" class="footer__logo" aria-label="Cass Plumbing - Home"><div class="logo-mark"><svg width="36" height="36" viewBox="0 0 36 36" fill="none" aria-hidden="true"><rect width="36" height="36" rx="8" fill="#1867C8"/><path d="M10 26V14a4 4 0 0 1 8 0v2a2 2 0 0 0 4 0V10" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="26" cy="10" r="2" fill="#FF6B2B"/><circle cx="10" cy="26" r="2" fill="white"/></svg></div><div class="logo-text"><span class="logo-name">Cass Plumbing</span><span class="logo-sub">Tampa Bay</span></div></a>
+        <p class="footer__tagline">Tampa Bay's highest-rated plumber. Licensed & insured. 20+ years.</p>
+        <div class="footer__contact-info"><a href="tel:8136944042" class="footer__contact-link"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>(813) 694-4042</a></div>
+      </div>
+      <nav class="footer__nav-col" aria-label="Footer services"><h3 class="footer__col-title">Services</h3><ul class="footer__nav-list"><li><a href="services.html">All Services</a></li><li><a href="services.html#leak-detection">Leak Detection</a></li><li><a href="services.html#water-purification">Water Purification</a></li></ul></nav>
+      <nav class="footer__nav-col" aria-label="Footer company"><h3 class="footer__col-title">Company</h3><ul class="footer__nav-list"><li><a href="about.html">About Us</a></li><li><a href="reviews.html">Reviews</a></li><li><a href="specials.html">Specials</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+      <div class="footer__service-areas"><h3 class="footer__col-title">Service Areas</h3><p class="footer__areas-list">Tampa · St. Petersburg · Brandon · Clearwater · Riverview · Valrico · Largo</p></div>
+    </div>
+    <div class="footer__bottom"><div class="container footer__bottom-inner"><p>&copy; 2024 Cass Plumbing, Inc. All rights reserved.</p><p>Licensed &amp; Insured | State of Florida Certified</p></div></div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

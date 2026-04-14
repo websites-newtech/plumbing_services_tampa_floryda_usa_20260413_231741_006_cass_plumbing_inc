@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cass Plumbing | Tampa Bay's Best Plumber | (813) 694-4042</title>
+  <meta name="description" content="Cass Plumbing — Tampa Bay's highest-rated plumber. 20+ years serving Tampa, St. Petersburg, Brandon & Clearwater. Leak detection, water purification & complete plumbing services. Lowest price guarantee.">
+  <meta property="og:title" content="Cass Plumbing | Tampa Bay's Best Plumber">
+  <meta property="og:description" content="Rated #1 by BestPlumbers.com. 1,000+ five-star reviews. Call (813) 694-4042.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body x-data="{ mobileOpen: false }">
+
+  <!-- Skip Link -->
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- Top Bar -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <span class="topbar__text">Rated Tampa Bay's Best Plumber by BestPlumbers.com</span>
+      <a href="tel:8136944042" class="topbar__phone">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+        (813) 694-4042
+      </a>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <header class="navbar" role="banner">
+    <div class="container navbar__inner">
+      <a href="index.html" class="navbar__logo" aria-label="Cass Plumbing - Home">
+        <div class="logo-mark">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+            <rect width="36" height="36" rx="8" fill="#1867C8"/>
+            <path d="M10 26V14a4 4 0 0 1 8 0v2a2 2 0 0 0 4 0V10" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="26" cy="10" r="2" fill="#FF6B2B"/>
+            <circle cx="10" cy="26" r="2" fill="white"/>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <span class="logo-name">Cass Plumbing</span>
+          <span class="logo-sub">Tampa Bay</span>
+        </div>
+      </a>
+
+      <nav class="navbar__nav" aria-label="Main navigation">
+        <a href="index.html" class="nav-link active" aria-current="page">Home</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="reviews.html" class="nav-link">Reviews</a>
+        <a href="specials.html" class="nav-link">Specials</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="navbar__cta">
+        <a href="tel:8136944042" class="btn btn--primary btn--sm">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+          Call Now
+        </a>
+      </div>
+
+      <button
+        class="navbar__hamburger"
+        @click="mobileOpen = !mobileOpen"
+        :aria-expanded="mobileOpen.toString()"
+        aria-controls="mobile-menu"
+        aria-label="Toggle navigation menu"
+      >
+        <span class="hamburger-line" :class="{ 'open': mobileOpen }"></span>
+        <span class="hamburger-line" :class="{ 'open': mobileOpen }"></span>
+        <span class="hamburger-line" :class="{ 'open': mobileOpen }"></span>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div
+      id="mobile-menu"
+      class="mobile-menu"
+      :class="{ 'mobile-menu--open': mobileOpen }"
+      x-show="mobileOpen"
+      x-transition:enter="mobile-enter"
+      x-transition:enter-start="mobile-enter-start"
+      x-transition:enter-end="mobile-enter-end"
+      x-transition:leave="mobile-leave"
+      x-transition:leave-start="mobile-leave-start"
+      x-transition:leave-end="mobile-leave-end"
+      role="navigation"
+      aria-label="Mobile navigation"
+    >
+      <div class="mobile-menu__inner">
+        <a href="index.html" class="mobile-nav-link active" aria-current="page">Home</a>
+        <a href="services.html" class="mobile-nav-link">Services</a>
+        <a href="about.html" class="mobile-nav-link">About</a>
+        <a href="reviews.html" class="mobile-nav-link">Reviews</a>
+        <a href="specials.html" class="mobile-nav-link">Specials</a>
+        <a href="contact.html" class="mobile-nav-link">Contact</a>
+        <a href="tel:8136944042" class="btn btn--primary btn--full mt-4">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+          Call (813) 694-4042
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO SECTION -->
+    <section class="hero" aria-label="Hero — Tampa Bay's Best Plumber">
+      <div class="hero__bg-pattern" aria-hidden="true"></div>
+      <div class="container hero__container">
+        <div class="hero__content">
+          <div class="hero__eyebrow" data-animate>
+            <span class="badge badge--accent">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              Rated #1 Tampa Bay Plumber
+            </span>
+          </div>
+          <h1 class="hero__headline" data-animate>
+            Tampa Bay's<br>
+            <span class="text-accent">Most Trusted</span><br>
+            Plumber
+          </h1>
+          <p class="hero__body" data-animate>
+            Over two decades of serving Tampa, St. Petersburg, Brandon & Clearwater. 1,000+ five-star reviews and a lowest price guarantee you can count on.
+          </p>
+          <div class="hero__actions" data-animate>
+            <a href="tel:8136944042" class="btn btn--primary btn--lg">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+              Call (813) 694-4042
+            </a>
+            <a href="contact.html" class="btn btn--outline btn--lg">Book Appointment</a>
+          </div>
+          <div class="hero__trust" data-animate>
+            <div class="trust-item">
+              <div class="trust-stars" aria-label="4.8 out of 5 stars">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFB800" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFB800" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFB800" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFB800" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFB800" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              </div>
+              <span><strong>4.8</strong> / 1,000+ Reviews</span>
+            </div>
+            <div class="trust-divider" aria-hidden="true"></div>
+            <div class="trust-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="#1867C8" aria-hidden="true"><path d="M9 12l2 2 4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0z" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>Licensed & Insured</span>
+            </div>
+            <div class="trust-divider" aria-hidden="true"></div>
+            <div class="trust-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1867C8" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <span>24/7 Emergency Service</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero__visual" data-animate>
+          <div class="hero__image-wrapper">
+            <img
+              src="assets/images/hero_001.jpg"
+              alt="Professional Cass Plumbing technician working in Tampa Bay home"
+              width="600"
+              height="700"
+              class="hero__img"
+              loading="eager"
+            >
+            <div class="hero__badge-float" aria-label="Award: Best Plumber Tampa Bay">
+              <div class="float-badge">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="#FFB800" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <span class="float-badge__title">Best Plumber</span>
+                <span class="float-badge__sub">BestPlumbers.com</span>
+              </div>
+            </div>
+            <div class="hero__stat-float" aria-label="20 plus years experience">
+              <div class="stat-badge">
+                <span class="stat-num">20+</span>
+                <span class="stat-label">Years Serving<br>Tampa Bay</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero__scroll-hint" aria-hidden="true">
+        <div class="scroll-hint-line"></div>
+      </div>
+    </section>
+
+    <!-- STATS BAR -->
+    <section class="stats-bar" aria-label="Key statistics">
+      <div class="container stats-bar__grid">
+        <div class="stat-item" data-animate>
+          <span class="stat-item__num">1,000+</span>
+          <span class="stat-item__label">Five-Star Reviews</span>
+        </div>
+        <div class="stat-item" data-animate>
+          <span class="stat-item__num">20+</span>
+          <span class="stat-item__label">Years Experience</span>
+        </div>
+        <div class="stat-item" data-animate>
+          <span class="stat-item__num">4.8★</span>
+          <span class="stat-item__label">Average Rating</span>
+        </div>
+        <div class="stat-item" data-animate>
+          <span class="stat-item__num">10+</span>
+          <span class="stat-item__label">Cities Served</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section class="services section" aria-labelledby="services-heading">
+      <div class="container">
+        <div class="section-header" data-animate>
+          <span class="section-eyebrow">What We Do</span>
+          <h2 id="services-heading" class="section-title">Complete Plumbing &amp;<br>Water Purification Services</h2>
+          <p class="section-body">From emergency repairs to full installations — we handle every plumbing need across Tampa Bay.</p>
+        </div>
+        <div class="services__grid">
+          <a href="services.html#leak-detection" class="service-card" data-animate>
+            <div class="service-card__icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+            </div>
+            <h3 class="service-card__title">Leak Detection &amp; Repair</h3>
+            <p class="service-card__desc">Advanced detection technology to find hidden leaks fast. Includes our Lowest Price Guarantee + 3 Florida Lotto® Tickets.</p>
+            <span class="service-card__link">Learn more →</span>
+          </a>
+          <a href="services.html#water-purification" class="service-card" data-animate>
+            <div class="service-card__icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/></svg>
+            </div>
+            <h3 class="service-card__title">Water Purification</h3>
+            <p class="service-card__desc">Whole-home filtration systems, water softeners, and purification solutions for clean, safe water throughout your home.</p>
+            <span class="service-card__link">Learn more →</span>
+          </a>
+          <a href="services.html#drain-cleaning" class="service-card" data-animate>
+            <div class="service-card__icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+            </div>
+            <h3 class="service-card__title">Drain Cleaning &amp; Storm Drains</h3>
+            <p class="service-card__desc">Professional drain cleaning and storm drain repair/replacement to protect your property from hazards.</p>
+            <span class="service-card__link">Learn more →</span>
+          </a>
+          <a href="services.html#water-heater" class="service-card" data-animate>
+            <div class="service-card__icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v6l3 4-3 4v6M15 2v6l-3 4 3 4v6"/></svg>
+            </div>
+            <h3 class="service-card__title">Water Heater Services</h3>
+            <p class="service-card__desc">Installation, repair, and replacement of all water heater types — traditional, tankless, and solar systems.</p>
+            <span class="service-card__link">Learn more →</span>
+          </a>
+          <a href="services.html#inspections" class="service-card" data-animate>
+            <div class="service-card__icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+            </div>
+            <h3 class="service-card__title">Plumbing Inspections</h3>
+            <p class="service-card__desc">Comprehensive inspections that can save you thousands on costly repairs before they become emergencies.</p>
+            <span class="service-card__link">Learn more →</span>
+          </a>
+          <a href="services.html" class="service-card service-card--cta" data-animate>
+            <div class="service-card__icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
+            </div>
+            <h3 class="service-card__title">All Plumbing Services</h3>
+            <p class="service-card__desc">Repiping, toilet repair, fixture installation, garbage disposals, sewer line services, and much more.</p>
+            <span class="service-card__link">View all services →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY CASS SECTION -->
+    <section class="why-cass section section--dark" aria-labelledby="why-heading">
+      <div class="why-cass__bg-number" aria-hidden="true">20+</div>
+      <div class="container why-cass__container">
+        <div class="why-cass__text">
+          <span class="section-eyebrow section-eyebrow--light">Why Choose Us</span>
+          <h2 id="why-heading" class="section-title section-title--light">A Reputation Built on<br><span class="text-accent">Trust &amp; Results</span></h2>
+          <p class="section-body section-body--light">For over two decades, Cass Plumbing has been the name Tampa Bay families trust most. We're not just plumbers — we're your neighbors.</p>
+          <div class="why-list">
+            <div class="why-item" data-animate>
+              <div class="why-item__check" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <div>
+                <strong>Lowest Price Guarantee</strong>
+                <p>We match any competitor's written estimate — and we'll give you 3 Florida Lotto® Tickets as a thank-you.</p>
+              </div>
+            </div>
+            <div class="why-item" data-animate>
+              <div class="why-item__check" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <div>
+                <strong>1,000+ Five-Star Reviews</strong>
+                <p>Our customers speak for us. Consistently rated 4.8 stars across all major review platforms.</p>
+              </div>
+            </div>
+            <div class="why-item" data-animate>
+              <div class="why-item__check" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <div>
+                <strong>Family-Owned &amp; Local</strong>
+                <p>Deep roots in the Tampa Bay community. We treat every home like our own.</p>
+              </div>
+            </div>
+            <div class="why-item" data-animate>
+              <div class="why-item__check" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <div>
+                <strong>24/7 Emergency Response</strong>
+                <p>Plumbing emergencies don't wait. Neither do we. Available around the clock when you need us most.</p>
+              </div>
+            </div>
+          </div>
+          <a href="about.html" class="btn btn--accent btn--lg mt-cta">Our Full Story</a>
+        </div>
+        <div class="why-cass__visual" data-animate>
+          <img
+            src="assets/images/hero_002.png"
+            alt="Cass Plumbing team — trusted Tampa Bay plumbing professionals"
+            width="540"
+            height="600"
+            loading="lazy"
+            class="why-cass__img"
+          >
+          <div class="why-cass__award" aria-label="Best Plumbers dot com award">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="#FFB800" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <div>
+              <strong>BestPlumbers.com</strong>
+              <span>Tampa Bay Award</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICE AREAS -->
+    <section class="areas section" aria-labelledby="areas-heading">
+      <div class="container">
+        <div class="section-header" data-animate>
+          <span class="section-eyebrow">Service Coverage</span>
+          <h2 id="areas-heading" class="section-title">Your Closest Local Plumber</h2>
+          <p class="section-body">Serving the entire Tampa Bay area and surrounding communities.</p>
+        </div>
+        <div class="areas__grid" role="list">
+          <div class="area-chip" role="listitem" data-animate>Tampa</div>
+          <div class="area-chip" role="listitem" data-animate>St. Petersburg</div>
+          <div class="area-chip" role="listitem" data-animate>Brandon</div>
+          <div class="area-chip" role="listitem" data-animate>Clearwater</div>
+          <div class="area-chip" role="listitem" data-animate>Hillsborough</div>
+          <div class="area-chip" role="listitem" data-animate>Pinellas</div>
+          <div class="area-chip" role="listitem" data-animate>Westchase</div>
+          <div class="area-chip" role="listitem" data-animate>Riverview</div>
+          <div class="area-chip" role="listitem" data-animate>Valrico</div>
+          <div class="area-chip" role="listitem" data-animate>Plant City</div>
+          <div class="area-chip" role="listitem" data-animate>Dunedin</div>
+          <div class="area-chip" role="listitem" data-animate>Largo</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials section section--subtle" aria-labelledby="testimonials-heading">
+      <div class="container">
+        <div class="section-header" data-animate>
+          <span class="section-eyebrow">Customer Reviews</span>
+          <h2 id="testimonials-heading" class="section-title">What Tampa Bay Says<br>About Cass Plumbing</h2>
+        </div>
+        <div class="testimonials__grid">
+          <article class="testimonial-card" data-animate>
+            <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#FFB800" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#FFB800" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#FFB800" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#FFB800" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#FFB800" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <blockquote class="testimonial-card__quote">
+              "Cass Plumbing came out the same day I called and fixed a major leak under my slab in no time. Their price was the best I found, and they even gave me lotto tickets! Highly recommend to anyone in Tampa Bay."
+            </blockquote>
+            <footer class="testimonial-card__author">
+              <div class="author-avatar" aria-hidden="true">MR</div>
+              <div>
+                <cite class="author-name">Maria R.</cite>
+                <span class="author-loc">Tampa, FL</span>
+              </div>
+            </footer>
+          </article>
+          <article class="testimonial-card" data-animate>
+            <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#FFB800" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#FFB800" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#FFB800" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#FFB800" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#FFB800" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <blockquote class="testimonial-card__quote">
+              "We've been using Cass Plumbing for years. They're always professional, on time, and honest about what needs to be done. They inspected our whole home and saved us from a very expensive problem."
+            </blockquote>
+            <footer class="testimonial-card__author">
+              <div class="author-avatar" aria-hidden="true">DT</div>
+              <div>
+                <cite class="author-name">David T.</cite>
+                <span class="author-loc">St. Petersburg, FL</span>
+              </div>
+            </footer>
+          </article>
+          <article class="testimonial-card" data-animate>
+            <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#FFB800" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#FFB800" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#FFB800" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#FFB800" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#FFB800" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <blockquote class="testimonial-card__quote">
+              "Called at 7am with a burst pipe. They were at my house by 8:30 and had it fixed before lunch. Incredible service, fair price. Cass Plumbing is the only plumber I'll ever call in Brandon."
+            </blockquote>
+            <footer class="testimonial-card__author">
+              <div class="author-avatar" aria-hidden="true">JL</div>
+              <div>
+                <cite class="author-name">Jennifer L.</cite>
+                <span class="author-loc">Brandon, FL</span>
+              </div>
+            </footer>
+          </article>
+        </div>
+        <div class="testimonials__cta" data-animate>
+          <a href="reviews.html" class="btn btn--outline-dark">Read All Reviews</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SPECIAL OFFER SECTION -->
+    <section class="special-offer" aria-labelledby="offer-heading">
+      <div class="container special-offer__inner">
+        <div class="special-offer__content" data-animate>
+          <span class="section-eyebrow section-eyebrow--accent">Limited Offer</span>
+          <h2 id="offer-heading" class="special-offer__title">Lowest Price Guarantee</h2>
+          <p class="special-offer__body">For first-time customers: We guarantee the lowest price on leak detection and repairs. If you find a lower written estimate, we'll match it — and send you home with <strong>3 Florida Lotto® Tickets</strong> just for giving us a chance.</p>
+          <div class="special-offer__actions">
+            <a href="tel:8136944042" class="btn btn--primary btn--lg">Claim This Offer</a>
+            <a href="specials.html" class="btn btn--ghost-light btn--lg">View All Specials</a>
+          </div>
+        </div>
+        <div class="special-offer__graphic" aria-hidden="true">
+          <div class="lotto-graphic">
+            <div class="lotto-ticket">
+              <span class="lotto-ticket__label">Florida Lotto®</span>
+              <span class="lotto-ticket__value">FREE ×3</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA STRIP -->
+    <section class="cta-strip" aria-labelledby="cta-heading">
+      <div class="container cta-strip__inner">
+        <div class="cta-strip__text" data-animate>
+          <h2 id="cta-heading" class="cta-strip__title">Plumbing Problem? We're Ready.</h2>
+          <p>Call now or book online — our team is standing by 24/7.</p>
+        </div>
+        <div class="cta-strip__actions" data-animate>
+          <a href="tel:8136944042" class="btn btn--white btn--lg">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+            (813) 694-4042
+          </a>
+          <a href="contact.html" class="btn btn--outline-white btn--lg">Book Appointment</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a href="index.html" class="footer__logo" aria-label="Cass Plumbing - Home">
+          <div class="logo-mark">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+              <rect width="36" height="36" rx="8" fill="#1867C8"/>
+              <path d="M10 26V14a4 4 0 0 1 8 0v2a2 2 0 0 0 4 0V10" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="26" cy="10" r="2" fill="#FF6B2B"/>
+              <circle cx="10" cy="26" r="2" fill="white"/>
+            </svg>
+          </div>
+          <div class="logo-text">
+            <span class="logo-name">Cass Plumbing</span>
+            <span class="logo-sub">Tampa Bay</span>
+          </div>
+        </a>
+        <p class="footer__tagline">Tampa Bay's highest-rated plumber. Serving residential and commercial customers across the entire Tampa Bay area for over 20 years.</p>
+        <div class="footer__contact-info">
+          <a href="tel:8136944042" class="footer__contact-link">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+            (813) 694-4042
+          </a>
+          <a href="tel:8132659200" class="footer__contact-link">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+            (813) 265-9200
+          </a>
+          <a href="tel:8662839964" class="footer__contact-link">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+            (866) 283-9964
+          </a>
+        </div>
+      </div>
+      <nav class="footer__nav-col" aria-label="Footer services navigation">
+        <h3 class="footer__col-title">Services</h3>
+        <ul class="footer__nav-list">
+          <li><a href="services.html#leak-detection">Leak Detection</a></li>
+          <li><a href="services.html#water-purification">Water Purification</a></li>
+          <li><a href="services.html#drain-cleaning">Drain Cleaning</a></li>
+          <li><a href="services.html#storm-drains">Storm Drain Repair</a></li>
+          <li><a href="services.html#water-heater">Water Heater Services</a></li>
+          <li><a href="services.html#inspections">Plumbing Inspections</a></li>
+          <li><a href="services.html#repiping">Repiping</a></li>
+        </ul>
+      </nav>
+      <nav class="footer__nav-col" aria-label="Footer company navigation">
+        <h3 class="footer__col-title">Company</h3>
+        <ul class="footer__nav-list">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li><a href="specials.html">Specials</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html">Book Appointment</a></li>
+        </ul>
+      </nav>
+      <div class="footer__service-areas">
+        <h3 class="footer__col-title">Service Areas</h3>
+        <p class="footer__areas-list">Tampa · St. Petersburg · Brandon · Clearwater · Hillsborough · Pinellas · Westchase · Riverview · Valrico · Plant City · Dunedin · Largo &amp; more</p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <p>&copy; 2024 Cass Plumbing, Inc. All rights reserved. | Tampa Bay, FL</p>
+        <p>Licensed &amp; Insured | State of Florida Certified Plumbing Contractor</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
